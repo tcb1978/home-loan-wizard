@@ -21,7 +21,7 @@ const initialState = {
 const UPDATE_LOAN_TYPE = 'UPDATE_LOAN_TYPE'
 const UPDATE_PROPERTY_TYPE = 'UPDATE_PROPERTY_TYPE'
 
-function reducer(state = initialState, action){
+export function reducer(state = initialState, action){
     switch (action.type) {
         case UPDATE_LOAN_TYPE:
             return {
@@ -36,16 +36,18 @@ function reducer(state = initialState, action){
     }
 }
 
-updateLoanType(loanType){
+export function updateLoanType(loanType){
     return {
         type: UPDATE_LOAN_TYPE,
         payload: loanType
     }
 }
 
-updatePropertyType(property){
-    type: UPDATE_PROPERTY_TYPE,
-    payload: property
+export function updatePropertyType(property){   
+    return {
+        type: UPDATE_PROPERTY_TYPE,
+        payload: property
+    }
 }
 
 export default reducer;
