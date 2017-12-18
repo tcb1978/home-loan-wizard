@@ -43,7 +43,7 @@ updateLoanType(loanType){
     }
 }
 
-kupdatePropertyType(property){
+updatePropertyType(property){
     type: UPDATE_PROPERTY_TYPE,
     payload: property
 }
