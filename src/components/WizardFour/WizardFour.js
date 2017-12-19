@@ -12,8 +12,8 @@ class WizardFour extends Component {
                     <p>Have you already found your new home?</p> <br />
                     
                     <div className="row">
-                        <Link to="/wFive"><button onClick={(e) => updateFound(e.target.value)}>Yes</button></Link>
-                        <Link to="/wFive"><button onClick={(e) => updateFound(e.target.value)}>No </button></Link>  
+                        <Link to="/wFive"><button onClick={(e) => updateFound(true)}>Yes</button></Link>
+                        <Link to="/wFive"><button onClick={(e) => updateFound(false)}>No </button></Link>  
                     </div>         
                 </div>
             </div>

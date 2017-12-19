@@ -129,22 +129,22 @@ class WizardEleven extends Component {
 
 function mapStateToProps(state) {
     return {
-        loanType: this.loanType,
-        propertyType: this.propertyType,
-        city: this.city,
-        propToBeUsedOn: this.propToBeUsedOn,
-        found: this.found,
-        realEstateAgent: this.realEstateAgent,
-        cost: this.cost,
-        downPayment: this.downPayment,
-        credit: this.credit,
-        history: this.history,
-        addressOne: this.addressOne,
-        addressTwo: this.addressTwo,
-        addressThree: this.addressThree,
-        firstName: this.firstName,
-        lastName: this.lastName,
-        email: this.email
+        loanType: state.loanType,
+        propertyType: state.propertyType,
+        city: state.city,
+        propToBeUsedOn: state.propToBeUsedOn,
+        found: state.found,
+        realEstateAgent: state.realEstateAgent,
+        cost: state.cost,
+        downPayment: state.downPayment,
+        credit: state.credit,
+        history: state.history,
+        addressOne: state.addressOne,
+        addressTwo: state.addressTwo,
+        addressThree: state.addressThree,
+        firstName: state.firstName,
+        lastName: state.lastName,
+        email: state.email
     };
 }
 
